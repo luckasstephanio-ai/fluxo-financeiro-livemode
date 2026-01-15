@@ -348,7 +348,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
-                <span class="font-bold text-sm uppercase hidden md:inline">Fluxo HB</span>
+                <span class="font-bold text-sm uppercase hidden md:inline">Fluxo FP&A</span>
             </button>
 
             <!-- Notes Toggle Button -->
@@ -664,6 +664,7 @@
             isTimerRunning: false,
             timerInterval: null,
             views: {
+                // --- VISÃO: DASHBOARD PRINCIPAL ---
                 dashboard: {
                     title: "VISÃO GERAL & OBJETIVOS",
                     description: "Foco: Sair do 'apagar incêndio' para construir a visão de FP&A e alinhar expectativas de novos processos.",
@@ -680,13 +681,15 @@
                             </div>
                             <div class="space-y-6">
                                 <div class="bg-white p-6 rounded shadow-sm border border-gray-100">
+                                    <!-- [EDITAR AQUI] - Títulos e descrições dos Pontos de Atenção na Home -->
                                     <h3 class="text-lg font-bold mb-4 text-black font-[Oswald]">PONTOS DE ATENÇÃO</h3>
                                     <ul class="space-y-4">
                                         <li class="flex items-start gap-3">
                                             <span class="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mt-0.5">1</span>
                                             <div>
-                                                <p class="text-sm font-semibold text-black">Hostbroadcast (FP&A)</p>
-                                                <p class="text-xs text-lm-gray">Definir o papel de 'Guardião da Qualidade Financeira'.</p>
+                                                <!-- Atualizado conforme solicitação: HB ao invés de Hostbroadcast -->
+                                                <p class="text-sm font-semibold text-black">HB (FP&A)</p>
+                                                <p class="text-xs text-lm-gray">Definir o papel de FP&A nesse novo processo.</p>
                                             </div>
                                         </li>
                                         <li class="flex items-start gap-3">
@@ -717,6 +720,7 @@
                         </div>
                     `
                 },
+                // --- VISÃO: BLOCO 1 (RECORRENTES) ---
                 block1: {
                     title: "1. RECORRENTES & BONIFICAÇÃO (BV)",
                     description: "O desafio de unificar bases distintas e melhorar o reporte.",
@@ -752,16 +756,18 @@
                             </div>
 
                             <!-- Card 3: Orçamento -->
+                            <!-- [EDITAR AQUI] - Texto sobre Orçamento/PMO -->
                             <div class="bg-white p-6 rounded shadow-sm border border-gray-200">
                                 <h3 class="font-bold text-black font-[Oswald] text-lg mb-2">ORÇAMENTO</h3>
-                                <p class="text-sm text-gray-600 mb-4"><strong>Transição:</strong> Apoio à liderança.</p>
+                                <p class="text-sm text-gray-600 mb-4"><strong>Papel:</strong> PMO do Processo.</p>
                                 <div class="bg-gray-50 p-4 rounded border-l-4 border-gray-300 mb-2">
-                                    <p class="text-sm font-medium text-gray-800 italic">"Qual meu papel específico de suporte com você assumindo a liderança?"</p>
+                                    <p class="text-sm font-medium text-gray-800 italic">"Com os debates mais em nível C-level, o que você precisa especificamente do meu suporte?"</p>
                                 </div>
                             </div>
                         </div>
                     `
                 },
+                // --- VISÃO: BLOCO 2 (NOVOS PROCESSOS) ---
                 block2: {
                     title: "2. NOVOS PROCESSOS: VISÃO FP&A",
                     description: "Saindo da 'execução de notas' para 'Guardião da Qualidade Financeira'.",
@@ -817,6 +823,7 @@
                         </div>
                     `
                 },
+                // --- VISÃO: BLOCO 3 (USO DE IA) ---
                 block3: {
                     title: "3. USO DE IA: FOCO NA ANÁLISE",
                     description: "Pivotando o uso de IA: De 'preencher planilha' para 'gerar insights'.",
@@ -854,6 +861,7 @@
                         </div>
                     `
                 },
+                // --- VISÃO: BLOCO 4 (DESENVOLVIMENTO) ---
                 block4: {
                     title: "4. DESENVOLVIMENTO PESSOAL",
                     description: "O dilema: Operacional vs Estratégico.",
